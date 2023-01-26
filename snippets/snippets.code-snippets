@@ -5,35 +5,35 @@
     "body": [
       "import ${2:moduleName} from '${1:module}';"
     ],
-    "description": "import"
+    "description": "Import"
   },
   "importNoModuleName": {
     "prefix": "imn",
     "body": [
       "import '${1:module}';"
     ],
-    "description": "import no module name"
+    "description": "Import no-module"
   },
   "importDestructing": {
     "prefix": "imd",
     "body": [
       "import { ${2:moduleName} } from '${1:module}';"
     ],
-    "description": "import destructing"
+    "description": "Import destructing"
   },
   "importEverything": {
     "prefix": "ime",
     "body": [
       "import * as ${2:alias} from '${1:module}';"
     ],
-    "description": "import everything"
+    "description": "Import everything"
   },
   "importAs": {
     "prefix": "ima",
     "body": [
       "import { ${2:originalName} as ${3:alias} } from '${1:module}';"
     ],
-    "description": "import as"
+    "description": "Import as"
   },
   "importReact": {
     "prefix": "imr",
@@ -45,7 +45,7 @@
   },
   // export
   "exportDefault": {
-    "prefix": "epd",
+    "prefix": "exp",
     "body": [
       "export default ${1};"
     ],
@@ -67,7 +67,7 @@
     "description": "Console log an object with its name",
   },
   "consoleTime": {
-    "prefix": "ctm",
+    "prefix": "cti",
     "body": [
       "console.time('${1:object}')"
     ],
@@ -95,7 +95,7 @@
     "description": "Console info"
   },
   "consoleError": {
-    "prefix": "cin",
+    "prefix": "cer",
     "body": [
       "console.error(${1:object})"
     ],
@@ -120,7 +120,7 @@
       "export default class ${1:${TM_FILENAME_BASE}} extends Component {",
       "  render() {",
       "    return (",
-      "      <div>${1:first}</div>",
+      "      <div>${0}</div>",
       "    )",
       "  }",
       "}",
@@ -132,9 +132,10 @@
     "prefix": "rfc",
     "body": [
       "import React from 'react';",
+      "",
       "export default function ${1:${TM_FILENAME_BASE}}() {",
       "  return (",
-      "    <div>${1:first}</div>",
+      "    <div>${0}</div>",
       "  )",
       "}",
       ""
@@ -205,17 +206,17 @@
     "body": [
       "describe('${1:name}', () => {",
       "\t${2}",
-      "})"
+      "});"
     ],
     "description": "Testing `describe` block"
   },
   "testBlock": {
-    "prefix": "test",
+    "prefix": "itt",
     "body": [
-      "test('should ${1:condition}', () => {",
+      "it('should ${1:condition}', () => {",
       "\t${2}",
-      "})"
+      "});"
     ],
-    "description": "Testing `test` block"
+    "description": "Testing `it` block"
   }
 }
