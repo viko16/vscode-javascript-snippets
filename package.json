@@ -1,5 +1,5 @@
 {
-  "name": "javascript-snippets",
+  "name": "viko-javascript-snippets",
   "displayName": "viko's JavaScript Snippets",
   "description": "JavaScript Code Snippets for me.",
   "version": "0.0.1",
@@ -36,6 +36,6 @@
     ]
   },
   "publisher": "viko16",
-  "repository": "viko16/vscode-extension-pack",
+  "repository": "viko16/vscode-javascript-snippets",
   "icon": "icon.png"
 }
