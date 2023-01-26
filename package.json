@@ -3,6 +3,12 @@
   "displayName": "viko's JavaScript Snippets",
   "description": "JavaScript Code Snippets for me.",
   "version": "0.0.1",
+  "scripts": {
+    "deploy": "vsce package && vsce publish minor"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.16.0"
+  },
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -28,5 +34,8 @@
         "path": "./snippets/snippets.code-snippets"
       }
     ]
-  }
+  },
+  "publisher": "viko16",
+  "repository": "viko16/vscode-extension-pack",
+  "icon": "icon.png"
 }
