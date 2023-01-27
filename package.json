@@ -2,7 +2,7 @@
   "name": "viko-javascript-snippets",
   "displayName": "viko's JavaScript Snippets",
   "description": "JavaScript Code Snippets for me.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "scripts": {
     "deploy": "vsce package && vsce publish minor"
   },
